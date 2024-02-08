@@ -7,19 +7,19 @@ export function FifthPiece(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.therfect_c.geometry}
+        geometry={(nodes.therfect_c as THREE.Mesh).geometry}
         material={materials["therfect_handpiece_01.002"]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.therfect_c_1.geometry}
+        geometry={(nodes.therfect_c_1 as THREE.Mesh).geometry}
         material={materials["therfect_body_color.006"]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.therfect_c_2.geometry}
+        geometry={(nodes.therfect_c_2 as THREE.Mesh).geometry}
         material={materials["therfect_black.003"]}
       />
     </group>

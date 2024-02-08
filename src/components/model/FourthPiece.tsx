@@ -7,19 +7,19 @@ export function FourthPiece(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.therfect_b.geometry}
+        geometry={(nodes.therfect_b as THREE.Mesh).geometry}
         material={materials["therfect_handpiece_01.004"]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.therfect_b_1.geometry}
+        geometry={(nodes.therfect_b_1 as THREE.Mesh).geometry}
         material={materials["therfect_black.002"]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.therfect_b_2.geometry}
+        geometry={(nodes.therfect_b_2 as THREE.Mesh).geometry}
         material={materials["therfect_body_color.005"]}
       />
     </group>

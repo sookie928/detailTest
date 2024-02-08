@@ -1,9 +1,9 @@
-import { FC, useRef, useState } from 'react';
-import { Body } from './model/Body';
-import { HandPiece } from './model/HandPiece';
-import Cable from './model/Cable';
 import { DepthOfField, EffectComposer } from '@react-three/postprocessing';
+import { FC, useRef } from 'react';
 import useStore from '../lib/stores/useStore';
+import { Body } from './model/Body';
+import Cable from './model/Cable';
+import { HandPiece } from './model/HandPiece';
 
 const Model: FC<object> = () => {
   const start = useRef();

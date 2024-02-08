@@ -7,25 +7,25 @@ export function FirstPiece(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.fastlane_therfect_handplace_cap_02001.geometry}
+        geometry={(nodes.fastlane_therfect_handplace_cap_02001 as THREE.Mesh).geometry}
         material={materials['therfect_body_color.003']}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.fastlane_therfect_handplace_cap_02001_1.geometry}
+        geometry={(nodes.fastlane_therfect_handplace_cap_02001_1 as THREE.Mesh).geometry}
         material={materials.therfect_handpiece_01}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.fastlane_therfect_handplace_cap_02001_2.geometry}
+        geometry={(nodes.fastlane_therfect_handplace_cap_02001_2 as THREE.Mesh).geometry}
         material={materials['therfect_handpiece_tip.001']}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.fastlane_therfect_handplace_cap_02001_3.geometry}
+        geometry={(nodes.fastlane_therfect_handplace_cap_02001_3 as THREE.Mesh).geometry}
         material={materials.therfect_handpiece_tip}
       />
     </group>
