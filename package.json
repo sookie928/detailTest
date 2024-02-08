@@ -2,7 +2,7 @@
   "name": "linetest",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sookie928.github.io/detailTest/",
+  "homepage": "https://sookie928.github.io/detailTest",
   "type": "module",
   "scripts": {
     "dev": "vite",
