@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei';
 
 export function SecondPiece(props) {
-  const { nodes, materials } = useGLTF("/therfect_frf_100_v2_240208.glb");
+  const { nodes, materials } = useGLTF("https://bluebeaker.blob.core.windows.net/public/3d/therfect_frf_100_v2_240208.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -32,4 +32,4 @@ export function SecondPiece(props) {
   );
 }
 
-useGLTF.preload('/therfect_frf_64_v2_240208.glb');
+useGLTF.preload('https://bluebeaker.blob.core.windows.net/public/3d/therfect_frf_64_v2_240208.glb');

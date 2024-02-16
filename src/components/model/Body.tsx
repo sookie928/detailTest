@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei';
 
 export function Body(props: any) {
-  const { nodes, materials } = useGLTF('/therfect_body_240208.glb');
+  const { nodes, materials } = useGLTF('https://bluebeaker.blob.core.windows.net/public/3d/therfect_body_240208.glb');
   return (
     <group {...props} dispose={null} position={[0, -1, 0]}>
       <group position={[0, 1.016, 0.158]} rotation={[Math.PI / 2, 0, 0]} scale={0.049}>
@@ -76,4 +76,4 @@ export function Body(props: any) {
   );
 }
 
-useGLTF.preload('/therfect_body_240208.glb');
+useGLTF.preload('https://bluebeaker.blob.core.windows.net/public/3d/therfect_body_240208.glb');

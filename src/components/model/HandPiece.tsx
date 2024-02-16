@@ -15,7 +15,7 @@ const rotation = new THREE.Euler(0, Math.PI / 5, Math.PI / 4);
 const q = new THREE.Quaternion().setFromEuler(rotation);
 const p = new THREE.Quaternion();
 export function HandPiece(props) {
-  const { nodes, materials } = useGLTF('/therfect_handpiece_v3_240208.glb');
+  const { nodes, materials } = useGLTF('https://bluebeaker.blob.core.windows.net/public/3d/therfect_handpiece_v3_240208.glb');
   const ref = useRef<THREE.Group<THREE.Object3DEventMap>>(null);
   const ref2 = useRef<THREE.Group<THREE.Object3DEventMap>>(null);
   useFrame(({}) => {
@@ -92,4 +92,4 @@ export function HandPiece(props) {
   );
 }
 
-useGLTF.preload('/therfect_handpiece_v2_240208.glb');
+useGLTF.preload('https://bluebeaker.blob.core.windows.net/public/3d/therfect_handpiece_v2_240208.glb');
